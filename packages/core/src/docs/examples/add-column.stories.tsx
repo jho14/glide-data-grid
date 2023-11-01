@@ -15,14 +15,7 @@ export default {
     decorators: [
         (Story: React.ComponentType) => (
             <SimpleThemeWrapper>
-                <BeautifulWrapper
-                    title="Add and remove columns"
-                    description={
-                        <>
-                            <Description>You can add and remove columns at your disposal</Description>
-                            <MoreInfo>Use the story&apos;s controls to change the number of columns</MoreInfo>
-                        </>
-                    }>
+                <BeautifulWrapper title="Subset Titanium">
                     <Story />
                 </BeautifulWrapper>
             </SimpleThemeWrapper>
@@ -44,7 +37,7 @@ export const AddColumns: React.FC<AddColumnsProps> = p => {
             getCellContent={getCellContent}
             experimental={{ strict: true }}
             columns={cols}
-            rows={10_000}
+            rows={10}
         />
     );
 };
